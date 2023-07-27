@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0%;
+            background-image: url(https://wallpapers.com/images/featured/cute-white-aesthetic-background-269l1d4qbnvth5sh.jpg);
+            background-repeat: no-repeat ;
+            background-position: right center;
+            background-size: contain;
+            min-height: 100vh;
+        }
+        .navigation{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+
+        }
+           .navigation a{
+            font-size: 2.6rem;
+            text-decoration:none;
+            color: white;
+
+
+           }
+           .register{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 40%;
+           }
+           .register *{
+            margin-bottom: 1%;
+           }
+           .register div input{
+            padding: 3%;
+            width:30vw;
+           }
+           .btn{
+            width: 33vw;
+            padding: 3%;
+           }
+    </style>
+    <script>
+        function validation(){
+             var name=document.getElementById("name").value;
+             var email=document.getElementById("email").value;
+             var gmale=document.getElementById("male").checked
+             var gfemale=document.getElementById("female").checked
+             console.log(gmale,gfemale)
+             var nameCheck=/^[a-zA-Z ]+$/
+             var emailCheck=/^[a-zA-Z0-9.]+@[a-z]+\.[a-z]{2,3}$/
+                            //sivaram@codegnan.com
+             if(name==""||name.length<3){
+                 alert("please Check your name")
+                 return false
+             }
+             if(!name.match(nameCheck)){
+                 alert("Name must carry alphabets")
+                 return false
+             }
+             if(email==""){
+                 alert("Enter Email Id")
+                 return false
+             }
+             if(!email.match(emailCheck)){
+                 alert("Check email once")
+                 return false
+             }
+             if(gmale==false && gfemale==false){
+                 alert("Select Gender")
+                 return false
+             }
+             return false
+        }
+     </script>
+ </head>
+ <body>
+    <nav class="navigation">
+        <a href="login.html">LOGIN</a>
+        <a href="register.html">REGISTER</a>
+        <a href="catalog.html">CATALOG</a>
+        <a href="cart.html">CART</a>
+    </nav>
+    <section class="register">
+        <form onsubmit="return validation()" action="https://www.google.com"></form>
+        <div>
+            <input placeholder=" name"/>
+        </div>
+        <div>
+            <input placeholder="email"/>
+        </div>
+        <div>
+            <input type="password" placeholder="enter password"/>
+        </div>
+        <div>
+            <input type="password" placeholder="confirm password"/>
+        </div>
+        <div>
+            <input name="gender" type="radio"/>male
+            <input name="gender" type="radio"/>female
+        </div>
+        <button class="btn">register</button>
+    </form>
+    </section>
+</body>
+</html>

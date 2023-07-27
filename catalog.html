@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0%
+        }
+        .navigation{
+            background-color: aqua;
+            display:flex;
+            justify-content: space-around;
+
+        }
+           .navigation a{
+            font-size: 2.6rem;
+            text-decoration:none;
+            color: white;
+
+
+           }
+           .catalog{
+            display: grid;
+            padding: 6%;
+            grid-template-columns: repeat(auto-fil,minmax(200px,1fr));
+            gap: 10px;
+           }
+           .catalog div{
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.6) ;
+            padding: 2%;
+           }
+           .btn{
+            border: none;
+            width: 60%;
+            padding: 5%;
+            background-color: bisque;
+            cursor: pointer;
+           }
+
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="login.html">LOGIN</a>
+        <a href="register.html">REGISTER</a>
+        <a href="catalog.html">CATALOG</a>
+        <a href="cart.html">CART</a>
+    </nav>
+    <section class="catalog">
+        <div>
+            <img width="40%" src="https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/1/d/y/-original-imaghxcpvtta2hzs.jpeg?q=90" />
+            <p>
+                iphone 14
+            </p>
+            <p>price:30000</p>
+            <button class="btn">add to cart</button>
+            </div>
+            <div>
+                <img width="40%" src="https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/1/d/y/-original-imaghxcpvtta2hzs.jpeg?q=90" />
+            <p>
+                iphone 14
+            </p>
+            <p>price:30000</p>
+            <button class="btn">add to cart</button>
+            </div>
+            <div>
+                <img width="40%" src="https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/1/d/y/-original-imaghxcpvtta2hzs.jpeg?q=90" />
+            <p>
+                iphone 14
+            </p>
+            <p>price:30000</p>
+            <button class="btn">add to cart</button>
+            </div>
+            <div>
+                <img width="40%" src="https://rukminim1.flixcart.com/image/850/1000/xif0q/mobile/1/d/y/-original-imaghxcpvtta2hzs.jpeg?q=90" />
+            <p>
+                iphone 14
+            </p>
+            <p>price:30000</p>
+            <button class="btn">add to cart</button>
+            </div>
+
+        
+    </section>
+</body>
+</html>

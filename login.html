@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0%
+        }
+        .navigation{
+            background-color: aqua;
+            display:flex;
+            justify-content: space-around;
+
+        }
+           .navigation a{
+            font-size: 2.6rem;
+            text-decoration:none;
+            color: white;
+           }
+           .login{
+            background-color: white;
+            width: 30%;
+            border-radius: 10px;
+            text-align: center;
+            margin:auto;
+            margin-top: 10%;
+            padding: 5%;
+           }
+           .login div{
+            margin:2%;
+           }
+           .login input{
+            padding:2%;
+            width:25vw
+           }
+           .forget{
+            font-size: 1.3rem;
+            text-decoration: none;
+           }
+           .btn{
+            background-color: red;
+            padding: 2%;
+            width: 10vw;
+            border: none;
+            cursor: pointer;
+            color:white;
+           }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <a href="login.html">LOGIN</a>
+        <a href="register.html">REGISTER</a>
+        <a href="catalog.html">CATALOG</a>
+        <a href="cart.html">CART</a>
+    </nav>
+    <section class="login">
+        <div>
+            <input placeholder="enter email"/>
+        </div>
+        <div>
+            <input placeholder="enter password"/>
+        </div>
+        <div>
+            <a class="forget"href="#">forgot password ?</a>
+        </div>
+        <button class="btn">LOGIN</button>
+    </section>
+</body>
+</html>
